@@ -595,41 +595,52 @@ a{
     .project-card:hover .project-content {
       scale: 0.55;
     }
-    .skills-container{
-      position:relative;
-      display:flex;
+    .skills-container {
       flex-direction: column;
-      width: 1100px;
-     
+      padding: 2rem;
+      margin: 5rem auto;
+      gap: 20px;
     }
-    .skill-container-left{
-      width:1100px;
-      display:flex;
-      font-size: 20px;
-      
+  
+    .skill-container-left,
+    .skill-container-right {
+      width: 100%;
     }
-    .skill-container-right{
-      display:flex;
-      flex-wrap:wrap;
-      width:1100;
-      position:relative;
-      
-      justify-content: center;
+  
+    .skill-container-right {
+      gap: 1rem;
     }
-    .skills-logo{
-      width:5px;
-      transition:all 0.5s;
+  
+    .skill-heading {
+      font-size: 30px;
+      line-height: 35px;
+      text-align: center;
     }
-    
-    .skills-logo:hover{
-      transform:scale(1.2);
+  
+    .caps {
+      font-size: 30px;
     }
-    
-    .skill-heading{
-      font-size:20px;
-      font-style: bold;
-      color: var(--bgOrange);
-      line-height: 50px;
+  
+    .skill-subHeading {
+      width: 100%;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+  
+    .skills-logo {
+      width: 10px;
+    }
+  
+    .skill-fade-text {
+      font-size: 5em;
+      bottom: -20%;
+      right: -10%;
+    }
+  
+    .blob-style {
+      width: 200px;
+      height: 200px;
     }
   }
   .skills-container{
@@ -641,7 +652,7 @@ a{
   }
 
 .skill-container-left{
-  width:50%;
+  width:100%;
   display:flex;
   flex-direction:column;
 }
@@ -649,7 +660,7 @@ a{
 .skill-container-right{
   display:flex;
   flex-wrap:wrap;
-  width:50%;
+  width:100%;
   position:relative;
   gap:2rem;
   justify-content: center;
@@ -661,7 +672,7 @@ a{
   font-style:bold;
   color:rgb(231,231,231);
   bottom:-34.5%;
-  right:-20%;
+  right:-25%;
   user-select:none;
   overflow-y:hidden;
 }
