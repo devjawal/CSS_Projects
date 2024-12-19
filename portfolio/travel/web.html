@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/Users/devjawal/desktop/practice/favicon2.png" type="image/png">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: "Be Vietnam Pro", sans-serif;
+        }
+       #wrapper{
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        perspective: 10px;
+       }
+       .container{
+        position:relative;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        transform-style: preserve-3d;
+        z-index:-1;
+       }
+       .background,.foreground{
+        position:absolute;
+        height:100%;
+        width:100%;
+        z-index:-1;
+        object-fit:cover;
+       }
+       .background{
+        transform: translateZ(-40px) scale(5);
+       }
+       .foreground{
+        transform: translateZ(-20px) scale(3);
+       }
+       h1{
+        position:absolute;
+        top:7rem;
+        font-size: 10vw;
+        letter-spacing: 5px;
+        font-family:sans-serif;
+        animation: pop 2s ease infinite;
+        filter:opacity(1);
+        transform:  scaleX(1);
+        transition: all 1s ease;
+        transform-origin: left;
+       }
+       @keyframes pop {
+        0%{
+            
+            color:black
+        }
+        
+        50%{
+            
+            color:rgb(58, 58, 58)
+        }
+        75%{
+            
+            color:rgb(12, 12, 12);
+        }
+        100%{
+            
+            color:rgb(24, 23, 23);
+        }
+       }
+       
+       nav{
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        position: absolute;
+        background-image: linear-gradient(to right,black,grey);
+        width:100%;
+        height: 60px;
+        top:1rem;
+        padding:15px 0px;
+        box-shadow: 5px 5px 20px;
+
+       }
+       a{
+        color:aliceblue;
+        text-decoration: none;
+       }
+       section{
+        background-color: #4d5050;
+        color:rgb(240, 246, 251);
+        padding: 5rem 0;
+       }
+       .sec{
+        font-size: 80px;
+        padding:0 5rem;
+        text-align: center;
+       }
+       .text{
+        font-size:30px;
+        padding:0 5rem;
+        margin: 5rem 0;
+       }
+       .bg{
+        position:relative;
+        width:100%;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        height: 500px;
+       }
+       .desc{
+        position:absolute;
+        background-color: rgb(255,255,255,0.3);
+        border-radius: 10px;
+        color:rgb(49, 49, 49);
+        font-size: 60px;
+        padding:0.5rem 2.5rem;
+        top: 50%;
+        left:30%;
+        
+       
+       }
+       .bg1{
+        background-image: url(sport-1.jpg);
+       }
+       .bg2{
+        background-image: url(sport-2.jpg);
+       }
+       .bg3{
+        background-image: url(sport-3.jpg);
+       }
+       .nv{
+        color:rgb(211, 207, 207);
+        font-size: 100%;
+        font-weight: bold;
+       }
+       #in{
+        border-radius: 5px;
+        max-height: 100%;
+        object-fit: cover;
+       }
+       .nv:hover{
+        transform: scale(1.5);
+        transition: 0.2s;
+       }
+       #s{
+        background-color: rgb(141, 140, 140);
+        
+       }
+       ::placeholder{
+        color:#ffffff;
+        text-align: center;
+       }
+       #im{
+        height: 100%;
+        border-radius: 10px;
+       }
+       .nav-items{
+    display:flex;
+    gap:2rem;
+    padding: 0 4em;
+}
+
+.head{
+    
+    scroll-behavior: smooth;
+    color:rgb(218, 248, 255);
+    
+}
+footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="wrapper">
+        <div class="container">
+            <img src="background.png" class="background">
+            <img src="foreground.png" class="foreground">
+            <h1 class="head">ADVENTURE</h1>
+           
+        </div>
+
+        <section>
+            <h2 class="sec" id="Adventure">Adventure time</h2>
+            <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sequi velit, quisquam a voluptates pariatur, magni hic consequatur, tenetur in eos. Culpa aspernatur ad est hic, voluptas quaerat doloribus repudiandae.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus saepe sequi iure unde voluptatibus asperiores incidunt accusantium aut, nobis officiis nulla? Cumque, vitae id natus cum ea facilis repudiandae.
+            </p>
+            <div class="bg bg1">
+                <h2 class="desc" id="Adventure">Biking</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sequi velit, quisquam a voluptates pariatur, magni hic consequatur, tenetur in eos. Culpa aspernatur ad est hic, voluptas quaerat doloribus repudiandae.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus saepe sequi iure unde voluptatibus asperiores incidunt accusantium aut, nobis officiis nulla? Cumque, vitae id natus cum ea facilis repudiandae.
+            </p>
+            <div class="bg bg2">
+                <h2 class="desc">Paragliding</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sequi velit, quisquam a voluptates pariatur, magni hic consequatur, tenetur in eos. Culpa aspernatur ad est hic, voluptas quaerat doloribus repudiandae.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus saepe sequi iure unde voluptatibus asperiores incidunt accusantium aut, nobis officiis nulla? Cumque, vitae id natus cum ea facilis repudiandae.
+            </p>
+            <div class="bg bg3 ">
+                <h2 class="desc">Surfing</h2>
+            </div>
+            <p class="text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae sequi velit, quisquam a voluptates pariatur, magni hic consequatur, tenetur in eos. Culpa aspernatur ad est hic, voluptas quaerat doloribus repudiandae.
+                <br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat temporibus saepe sequi iure unde voluptatibus asperiores incidunt accusantium aut, nobis officiis nulla? Cumque, vitae id natus cum ea facilis repudiandae.
+            </p>
+        </section>
+        <footer>
+            <p>&copy; 2024 TravelNow. All rights reserved.</p>
+        </footer>
+
+    </div>
+    
+</body>
+</html>
